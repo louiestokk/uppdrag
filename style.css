@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --transition: all 0.3 linear;
+  --white: #ffffff;
+  --main-Color: #f87171;
+  --main-Color-light2: #fca5a5;
+  --main-Color-light3: #fecaca;
+  --text-color: #292524;
+  --text-light: #44403c;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.title {
+  position: absolute;
+  top: 10%;
+}
+.title h1 {
+  color: var(--main-Color);
+  font-weight: bold;
+}
+.title p {
+  color: var(--main-Color-light2);
+}
+.step-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.step h4 {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: bold;
+}
+.avgrensare {
+  margin-top: 2rem;
+  width: 3.5rem;
+  height: 5px;
+  background: var(--text-light);
+}
+
+.icon-container {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid #222;
+  text-align: center;
+}
+.nummer-icon {
+  font-weight: bold;
+}
+.form-container {
+  position: relative;
+  border: transparent;
+  border-radius: 5px 5px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./bg.webp");
+  background-size: cover;
+  height: 38rem;
+  width: 30rem;
+}
+.bohags-typ-1,
+.bohags-typ-2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.bohags-container {
+  display: flex;
+}
+i {
+  font-size: 3rem;
+  cursor: pointer;
+}
+i:hover {
+  color: var(--main-Color);
+}
+.bohags-typ-1 span {
+  margin-right: 1.5rem;
+}
+.bohags-typ-2 span {
+  margin-left: 1.5rem;
+}
+.lght,
+.kallare {
+  margin-top: 2rem;
+}
+
+.hus,
+.boende {
+  margin-top: 3rem;
+}
+
+.form-btn {
+  bottom: 15%;
+  right: 30%;
+  position: absolute;
+  background: transparent;
+  border-color: var(--main-Color);
+  color: var(--main-Color);
+  width: 5rem;
+  text-transform: uppercase;
+  border-radius: 3px 3px;
+  cursor: pointer;
+}
+.prev-btn {
+  position: absolute;
+  left: 30%;
+}
+.form-btn:hover {
+  background: var(--main-Color);
+  color: white;
+}
+.hidden {
+  display: none;
+}
+textarea {
+  border: none;
+}
+.email,
+.tele {
+  margin-top: 1rem;
+}
+.tele {
+  margin-bottom: 1rem;
+}
+
+.kontakt-form {
+  position: absolute;
+  bottom: 31%;
+}
+.kontakt-form i {
+  font-size: 1.5rem;
+}
+.fa-check-circle {
+  font-size: 1.7rem;
+  color: var(--main-Color);
+}
+
+@media screen and (max-width: 667px) {
+  .step-container {
+    width: 300px;
+  }
+  .form-container {
+    width: 350px;
+    height: 400px;
+  }
+  .click-iconer i {
+    font-size: 1.5rem;
+  }
+  .click-iconer {
+    margin: 0;
+  }
+  .hus,
+  .boende {
+    margin-top: 2.5rem;
+  }
+  .form-btn {
+    width: 50px;
+    font-size: 0.8rem;
+  }
+  #msg {
+    width: 180px;
+    height: 100px;
+  }
+  input {
+    width: 170px;
+  }
+  label {
+    font-size: 0.8rem;
+  }
+  .kontaktaMig i {
+    font-size: 1rem;
+  }
+  .kontakt-form {
+    bottom: 24%;
+  }
+}
